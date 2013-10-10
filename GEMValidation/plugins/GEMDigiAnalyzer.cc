@@ -344,6 +344,7 @@ void GEMDigiAnalyzer::bookGEMCSCCoPadDigiTree()
    track_tree_->Branch("gem_dg_phi", &track_.gem_dg_phi);
    track_tree_->Branch("gem_pad_eta", &track_.gem_pad_eta);
    track_tree_->Branch("gem_pad_phi", &track_.gem_pad_phi);
+   track_tree_->Branch("gem_trk_rho",&track_.gem_trk_rho);
    track_tree_->Branch("gem_lx_even",&track_.gem_lx_even);
    track_tree_->Branch("gem_ly_even",&track_.gem_ly_even);
    track_tree_->Branch("gem_lx_odd",&track_.gem_lx_odd);

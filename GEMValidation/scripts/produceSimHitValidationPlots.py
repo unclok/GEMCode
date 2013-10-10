@@ -18,7 +18,9 @@ ROOT.gROOT.SetBatch(1)
 
 if __name__ == "__main__":  
 
-  inputFile = '/afs/cern.ch/user/d/dildick/work/GEM/tempDir/CMSSW_6_2_0_pre7/src/GEMCode/GEMValidation/test/gem_sh_ana.test.root'
+  inputFile = str(sys.argv[1])
+  if len(inputFile) < 3:
+      inputFile = '/afs/cern.ch/user/d/dildick/work/GEM/tempDir/CMSSW_6_2_0_pre7/src/GEMCode/GEMValidation/test/gem_sh_ana.test.root'
   targetDir = './'
   
   ## extension for figures - add more?
